@@ -1,0 +1,1 @@
+{"jobId":"Test","status":2,"joinScriptUrl":"http://www.l16.ct8.pl/Game/Join.ashx?placeId=1818&ip=%ip%&port=%port%&id=%id%&app=%app%&user=%user%","authenticationUrl":"http://www.l16.ct8.pl/Login/Negotiate.ashx","authenticationTicket":-1,"message":null}

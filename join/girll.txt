@@ -1,0 +1,227 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Hat" referent="RBX0">
+		<Properties>
+			<CoordinateFrame name="AttachmentPoint">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<string name="Name">woman</string>
+		</Properties>
+		<Item class="Part" referent="RBX1">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>10</X>
+					<Y>4.20000029</Y>
+					<Z>-3</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Handle</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">1</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">1</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>1.20000005</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Script" referent="RBX2">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Script</string>
+					<ProtectedString name="Source">function checkYear(char)
+&#9;if game.Players:FindFirstChild(char.Name) then
+&#9;&#9;local plr = game.Players:FindFirstChild(char.Name)
+&#9;&#9;local predictedyear = &quot;~2013&quot;
+&#9;&#9;local getGameSessionIDExists = false
+&#9;&#9;local ParticleEmitterExists = false
+&#9;&#9;local versionValExists = false
+&#9;&#9;local AutoRotateExists = false
+&#9;&#9;local MaxZoomDistanceExists = false
+&#9;&#9;local vsval = &quot;NONE&quot;
+
+&#9;&#9;local check1,res1 = pcall(function() 
+&#9;&#9;&#9;local sessionid = plr:GetGameSessionID() 
+&#9;&#9;end)
+&#9;&#9;
+&#9;&#9;if check1 then getGameSessionIDExists = true end
+&#9;&#9;
+&#9;&#9;local check2,res1 = pcall(function()
+&#9;&#9;&#9;local particleemmitter = Instance.new(&quot;ParticleEmitter&quot;) wait() 
+&#9;&#9;&#9;particleemmitter:remove()
+&#9;&#9;end)
+&#9;&#9;
+&#9;&#9;if check2 then ParticleEmitterExists = true end
+
+&#9;&#9;local check3,res1 = pcall(function()
+&#9;&#9;&#9;local humtemp = Instance.new(&quot;Humanoid&quot;) wait() 
+&#9;&#9;&#9;humtemp.AutoRotate = false
+&#9;&#9;&#9;humtemp:remove()
+&#9;&#9;end)
+&#9;&#9;
+&#9;&#9;if check3 then AutoRotateExists = true end
+
+&#9;&#9;local check4,res1 = pcall(function()
+&#9;&#9;&#9;print(plr.CameraMaxZoomDistance)
+&#9;&#9;end)
+&#9;&#9;
+&#9;&#9;if check4 then MaxZoomDistanceExists = true end
+
+&#9;&#9;if game.Lighting:FindFirstChild(&quot;Version&quot;) then
+&#9;&#9;&#9;versionValExists = true
+&#9;&#9;&#9;pcall(function()
+&#9;&#9;&#9;&#9;local vs = game.Lighting:FindFirstChild(&quot;Version&quot;)
+&#9;&#9;&#9;&#9;predictedyear = vs.Value or &quot;~2013&quot;
+&#9;&#9;&#9;&#9;vsval = vs.Value
+&#9;&#9;&#9;end)
+&#9;&#9;end
+&#9;&#9;
+&#9;&#9;if getGameSessionIDExists or MaxZoomDistanceExists or AutoRotateExists then 
+&#9;&#9;&#9;predictedyear = &quot;2014&quot; 
+&#9;&#9;end
+&#9;&#9;
+&#9;&#9;if ParticleEmitterExists then predictedyear = &quot;2015&quot; end
+&#9;&#9;
+&#9;&#9;return predictedyear
+&#9;else
+&#9;&#9;print(&quot;not a player&quot;)
+&#9;end
+end
+
+repeat wait() until script.Parent.Parent.Parent:FindFirstChild(&quot;Humanoid&quot;)
+local chr = script.Parent.Parent.Parent
+local changeHead = true
+wait(0.1)
+local year = &quot;2010&quot;
+pcall(function()
+&#9;year = checkYear(chr)
+end)
+
+if year == &quot;2014&quot; or year == &quot;2015&quot; then
+&#9;for i,v in pairs(script:GetChildren()) do
+&#9;&#9;if v.className == &quot;CharacterMesh&quot; then
+&#9;&#9;&#9;v:Clone().Parent = chr
+&#9;&#9;end
+&#9;end
+else
+for i,v in pairs(chr:GetChildren()) do
+&#9;if v.Name == &quot;Torso&quot; then
+&#9;&#9;script.TORSO:Clone().Parent = v
+&#9;end
+&#9;--[[if changeHead then
+&#9;&#9;if v.Name == &quot;Head&quot; then
+&#9;&#9;&#9;for a,b in pairs(v:GetChildren()) do
+&#9;&#9;&#9;&#9;if b:IsA(&quot;SpecialMesh&quot;) then
+&#9;&#9;&#9;&#9;&#9;b:remove()
+&#9;&#9;&#9;&#9;end
+&#9;&#9;&#9;end
+&#9;&#9;&#9;script.HEAD:Clone().Parent = v
+&#9;&#9;end
+&#9;end]]--
+end
+end
+--script.Parent:remove()
+wait(5)
+script.Parent.Parent:remove()</ProtectedString>
+				</Properties>
+				<Item class="CharacterMesh" referent="RBX3">
+					<Properties>
+						<int name="BaseTextureId">0</int>
+						<token name="BodyPart">1</token>
+						<int name="MeshId">48112070</int>
+						<string name="Name">TorsoMesh</string>
+						<int name="OverlayTextureId">0</int>
+					</Properties>
+				</Item>
+				<Item class="SpecialMesh" referent="RBX4">
+					<Properties>
+						<token name="LODX">2</token>
+						<token name="LODY">2</token>
+						<Content name="MeshId"><url>http://miimak.xyz/api/torso/48112070.mesh</url></Content>
+						<token name="MeshType">5</token>
+						<string name="Name">TORSO</string>
+						<Vector3 name="Offset">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<Vector3 name="Scale">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>1</Z>
+						</Vector3>
+						<Content name="TextureId"><null></null></Content>
+						<Vector3 name="VertexColor">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+	</Item>
+</roblox>

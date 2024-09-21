@@ -1,0 +1,2 @@
+GOLDBLOX is gone forever.<br> When I started this site (used to be weedblox), it was just because Austiblox was gone, but since then it has changed into something entirely different. <br> GOLDBLOX was there just so I could work on something, but I've realized I'm no longer interested in ROBLOX, and GOLDBLOX is a massive waste of my time.<br> It's cost me so many hours of my life that I'll never get back, and also, no one fucking liked it. It was just shitted on, so <br><h1><b>fuck y'all. You don't deserve it.</b></h1><br>
+bye! -copy

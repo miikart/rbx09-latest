@@ -1,0 +1,420 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.rccs.lol" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="GuiMain" referent="RBX0">
+		<Properties>
+			<string name="Name">HealthGUI</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Frame" referent="RBX1">
+			<Properties>
+				<bool name="Active">false</bool>
+				<Color3 name="BackgroundColor3">4285215356</Color3>
+				<float name="BackgroundTransparency">1</float>
+				<Color3 name="BorderColor3">4279970357</Color3>
+				<int name="BorderSizePixel">1</int>
+				<string name="Name">Tray</string>
+				<UDim2 name="Position">
+					<XS>0.949999988</XS>
+					<XO>0</XO>
+					<YS>0.380000025</YS>
+					<YO>0</YO>
+				</UDim2>
+				<UDim2 name="Size">
+					<XS>0.0450000018</XS>
+					<XO>0</XO>
+					<YS>0.340000004</YS>
+					<YO>0</YO>
+				</UDim2>
+				<token name="SizeConstraint">0</token>
+				<bool name="Visible">true</bool>
+				<int name="ZIndex">1</int>
+				<bool name="archivable">true</bool>
+			</Properties>
+			<Item class="ImageLabel" referent="RBX2">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4294967295</Color3>
+					<float name="BackgroundTransparency">1</float>
+					<Color3 name="BorderColor3">4279970357</Color3>
+					<int name="BorderSizePixel">1</int>
+					<Content name="Image"><url>http://www.rccs.lol/client/2009/health.png</url></Content>
+					<string name="Name">ImageLabel</string>
+					<UDim2 name="Position">
+						<XS>0</XS>
+						<XO>-5</XO>
+						<YS>0.800000012</YS>
+						<YO>-117</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>1</XS>
+						<XO>7</XO>
+						<YS>0.200000003</YS>
+						<YO>7</YO>
+					</UDim2>
+					<token name="SizeConstraint">1</token>
+					<bool name="Visible">true</bool>
+					<int name="ZIndex">1</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="Frame" referent="RBX3">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4289733411</Color3>
+					<float name="BackgroundTransparency">0</float>
+					<Color3 name="BorderColor3">4278190080</Color3>
+					<int name="BorderSizePixel">0</int>
+					<string name="Name">HealthBarBacking</string>
+					<UDim2 name="Position">
+						<XS>0.419999987</XS>
+						<XO>-1</XO>
+						<YS>0</YS>
+						<YO>0</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>12</XO>
+						<YS>0</YS>
+						<YO>103</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">true</bool>
+					<int name="ZIndex">1</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="Frame" referent="RBX4">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4286892054</Color3>
+					<float name="BackgroundTransparency">0</float>
+					<Color3 name="BorderColor3">4278190080</Color3>
+					<int name="BorderSizePixel">0</int>
+					<string name="Name">HealthBar</string>
+					<UDim2 name="Position">
+						<XS>0.420000017</XS>
+						<XO>-1</XO>
+						<YS>0</YS>
+						<YO>0</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>12</XO>
+						<YS>0</YS>
+						<YO>103</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">true</bool>
+					<int name="ZIndex">2</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="Script" referent="RBX5">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Script</string>
+						<ProtectedString name="Source">h = script.Parent.Parent.Parent.Parent.Parent.Character.Humanoid
+
+h.Changed:connect(function()
+    local guiService = game:GetService(&quot;GuiService&quot;)
+    local screenSize = guiService:GetScreenResolution()
+    local scaleFactor = screenSize.X / 1920 -- assuming 1920x1080 is your target resolution
+
+    script.Parent.Size = UDim2.new(0, 11.5, 0.355 * (h.Health / h.MaxHealth), 0)
+    script.Parent.Position = UDim2.new(0, 1.39 * scaleFactor, 0, 0) -- anchor to top-right corner
+    script.Parent.AnchorPoint = Vector2.new(1, 0) -- set anchor point to top-right corner
+
+end)</ProtectedString>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Script" referent="RBX6">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Script</string>
+					<ProtectedString name="Source">local tray.ImageLabel.Anchored = true</ProtectedString>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+		</Item>
+	</Item>
+	<Item class="Script" referent="RBX7">
+		<Properties>
+			<bool name="Disabled">false</bool>
+			<Content name="LinkedSource"><null></null></Content>
+			<string name="Name">HealthScript v2.0</string>
+			<ProtectedString name="Source">local humanoid = script.Parent.Humanoid
+
+if (humanoid == nil) then
+	print(&quot;ERROR: no humanoid found in &apos;HealthScript v2.0&apos;&quot;)
+end
+
+
+function CreateGUI()
+	local p = game.Players:GetPlayerFromCharacter(humanoid.Parent)
+	print(&quot;Health for Player: &quot; .. p.Name)
+	script.HealthGUI.Parent = p.PlayerGui
+end
+
+function UpdateGUI(health)
+	local pgui = game.Players:GetPlayerFromCharacter(humanoid.Parent).PlayerGui
+	local tray = pgui.HealthGUI.Tray
+	tray.Anchored = true
+	
+	tray.HealthBar.Size = UDim2.new(0.2, 0, 0.8 * (health / humanoid.MaxHealth), 0) 
+	tray.HealthBar.Position = UDim2.new(0.4, 0, 0.8 * (1-  (health / humanoid.MaxHealth)), 0) 
+
+end
+
+
+function HealthChanged(health)
+	UpdateGUI(health)
+end
+
+
+CreateGUI()
+humanoid.HealthChanged:connect(HealthChanged)
+humanoid.Died:connect(function() HealthChanged(0) end)</ProtectedString>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="GuiMain" referent="RBX0">
+			<Properties>
+				<string name="Name">HealthGUI</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+			<Item class="Frame" referent="RBX1">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4285215356</Color3>
+					<float name="BackgroundTransparency">1</float>
+					<Color3 name="BorderColor3">4279970357</Color3>
+					<int name="BorderSizePixel">1</int>
+					<string name="Name">Tray</string>
+					<UDim2 name="Position">
+						<XS>0.949999988</XS>
+						<XO>0</XO>
+						<YS>0.380000025</YS>
+						<YO>0</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>0.0450000018</XS>
+						<XO>0</XO>
+						<YS>0.340000004</YS>
+						<YO>0</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">true</bool>
+					<int name="ZIndex">1</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="ImageLabel" referent="RBX2">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4294967295</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<Content name="Image"><url>http://www.rccs.lol/client/2009/health.png</url></Content>
+						<string name="Name">ImageLabel</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>-5</XO>
+							<YS>0.800000012</YS>
+							<YO>-117</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>1</XS>
+							<XO>7</XO>
+							<YS>0.200000003</YS>
+							<YO>7</YO>
+						</UDim2>
+						<token name="SizeConstraint">1</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+				<Item class="Frame" referent="RBX3">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4289733411</Color3>
+						<float name="BackgroundTransparency">0</float>
+						<Color3 name="BorderColor3">4278190080</Color3>
+						<int name="BorderSizePixel">0</int>
+						<string name="Name">HealthBarBacking</string>
+						<UDim2 name="Position">
+							<XS>0.419999987</XS>
+							<XO>-1</XO>
+							<YS>0</YS>
+							<YO>0</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>12</XO>
+							<YS>0</YS>
+							<YO>103</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+				<Item class="Frame" referent="RBX4">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4286892054</Color3>
+						<float name="BackgroundTransparency">0</float>
+						<Color3 name="BorderColor3">4278190080</Color3>
+						<int name="BorderSizePixel">0</int>
+						<string name="Name">HealthBar</string>
+						<UDim2 name="Position">
+							<XS>0.420000017</XS>
+							<XO>-1</XO>
+							<YS>0</YS>
+							<YO>0</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>12</XO>
+							<YS>0</YS>
+							<YO>103</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">2</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="Script" referent="RBX5">
+						<Properties>
+							<bool name="Disabled">false</bool>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">Script</string>
+							<ProtectedString name="Source">h = script.Parent.Parent.Parent.Parent.Parent.Character.Humanoid
+
+h.Changed:connect(function()
+    local guiService = game:GetService(&quot;GuiService&quot;)
+    local screenSize = guiService:GetScreenResolution()
+    local scaleFactor = screenSize.X / 1920 -- assuming 1920x1080 is your target resolution
+
+    script.Parent.Size = UDim2.new(0, 11.5, 0.355 * (h.Health / h.MaxHealth), 0)
+    script.Parent.Position = UDim2.new(0, 1.39 * scaleFactor, 0, 0) -- anchor to top-right corner
+    script.Parent.AnchorPoint = Vector2.new(1, 0) -- set anchor point to top-right corner
+
+end)</ProtectedString>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Script" referent="RBX6">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Script</string>
+						<ProtectedString name="Source">local tray.ImageLabel.Anchored = true</ProtectedString>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+	</Item>
+	<Item class="Script" referent="RBX8">
+		<Properties>
+			<bool name="Disabled">false</bool>
+			<Content name="LinkedSource"><null></null></Content>
+			<string name="Name">Health</string>
+			<ProtectedString name="Source">function waitForChild(parent, childName)
+        local child = parent:findFirstChild(childName)
+        if child then return child end
+        while true do
+        child = parent.ChildAdded:wait()
+        if child.Name==childName then return child end
+        end
+        end
+
+        -- declarations
+
+        local Figure = script.Parent
+        local Head = waitForChild(Figure, &quot;Head&quot;)
+        local Humanoid = waitForChild(Figure, &quot;Humanoid&quot;)
+
+        -- regeneration
+        while true do
+        local s = wait(1)
+        local health = Humanoid.Health
+        if health &gt; 0 and health &lt; Humanoid.MaxHealth then
+        health = health + 0.01 * s * Humanoid.MaxHealth
+        if health * 1.05 &lt; Humanoid.MaxHealth then
+        Humanoid.Health = health
+        else
+        Humanoid.Health = Humanoid.MaxHealth
+        end
+        end
+        end
+      </ProtectedString>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Workspace" referent="RBX9">
+		<Properties>
+			<Ref name="CurrentCamera">RBX10</Ref>
+			<double name="DistributedGameTime">0</double>
+			<CoordinateFrame name="ModelInPrimary">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<string name="Name">Workspace</string>
+			<Ref name="PrimaryPart">null</Ref>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Camera" referent="RBX10">
+			<Properties>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<CoordinateFrame name="CoordinateFrame">
+					<X>-8</X>
+					<Y>5</Y>
+					<Z>5</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>-0</R02>
+					<R10>-0</R10>
+					<R11>0.89442724</R11>
+					<R12>0.44721362</R12>
+					<R20>0</R20>
+					<R21>-0.44721362</R21>
+					<R22>0.89442724</R22>
+				</CoordinateFrame>
+				<CoordinateFrame name="Focus">
+					<X>-8</X>
+					<Y>-3.94427204</Y>
+					<Z>-12.8885441</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">Camera</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>
