@@ -12,9 +12,6 @@ goldblox WAS an january 2009 'website' recreation
 # Quick Start Guide (QSG)
 0.  (NGINX ONLY) put  
 >  
->    location ~ ^/api/web/ {
-        deny all;
-    }
 
       location / {
         try_files $uri $uri/ @php;
@@ -28,6 +25,9 @@ goldblox WAS an january 2009 'website' recreation
     if ($host ~* ^[^www\.](.*)) {
         return 302 http://www.$host$request_uri;
          }
+         location ~ ^/api/web/ {
+        deny all;
+    }
          
 in your nginx config for your GOLDBLOX rehost.
 
