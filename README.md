@@ -6,6 +6,18 @@
 
 > GOLDBLOX is gone forever,  When I started this site (used to be weedblox), it was just because Austiblox was gone, but since then it has changed into something entirely different. <br> GOLDBLOX was there just so I could work on something, but I've realized I'm no longer interested in ROBLOX, and GOLDBLOX is a massive waste of my time.<br> It's cost me so many hours of my life that I'll never get back, and also, no one fucking liked it. It was just shitted on, so <br><h3 ><b>fuck y'all. You don't deserve it.</b></h3>
 bye! -copy<br>
+# Usage
+
+    MIT License
+    
+    Copyright (c) 2024 miikart
+    
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+    
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 
 # Requirements
  - Nginx(Apache might work..)
