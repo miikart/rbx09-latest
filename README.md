@@ -1,5 +1,7 @@
-# goldblox-latest
-![GOLDBLOX](https://raw.githubusercontent.com/miikart/rbx09-latest/refs/heads/main-src/images/GOLDBLOX.png)
+![enter image description here](https://raw.githubusercontent.com/miikart/rbx09-latest/refs/heads/main-src/images/GOLDBLOX.png)
+
+
+
 goldblox WAS an january 2009 'website' recreation
 # Requirements
  - Nginx(Apache might work..)
@@ -19,8 +21,10 @@ goldblox WAS an january 2009 'website' recreation
  6. Done.
 # Common issues that might appear during setup.
 1. Rendering ( to fix this, you will have to do this yourself . )
-2. 500 Error.
-# Rendering ( good luck...)
+2. 500 Error. ( 500 Occurs because you arent using CF(Cloudflare.).. )
+# Fixes
+1. Delete line 209 - Line 265 in api/web/config.php to fix 500.
+ # Rendering ( good luck...)
 0. The render URL for GOLDBLOX is http://localhost:30000, Please note that.
 1. the character file that GOLDBLOX uses  can be found in [/Rendering/](https://github.com/miikart/rbx09-latest/tree/main-src/Rendering)
 2. copy and paste everything in that folder to C:\ProgramData\Roblox\content\fonts 
