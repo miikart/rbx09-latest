@@ -1,6 +1,6 @@
-# goldblox-latest
+
+
 ![enter image description here](https://raw.githubusercontent.com/miikart/rbx09-latest/refs/heads/main-src/images/GOLDBLOX.png)
-goldblox WAS an january 2009 'website' recreation
 # Requirements
  - Nginx(Apache might work..)
  - MySQL
