@@ -25,6 +25,7 @@ goldblox WAS an january 2009 'website' recreation
     if ($host ~* ^[^www\.](.*)) {
         return 302 http://www.$host$request_uri;
          }
+         
          location ~ ^/api/web/ {
         deny all;
     }
