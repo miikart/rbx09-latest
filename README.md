@@ -1,7 +1,5 @@
+# goldblox-latest
 ![enter image description here](https://raw.githubusercontent.com/miikart/rbx09-latest/refs/heads/main-src/images/GOLDBLOX.png)
-
-
-
 goldblox WAS an january 2009 'website' recreation
 # Requirements
  - Nginx(Apache might work..)
@@ -12,6 +10,26 @@ goldblox WAS an january 2009 'website' recreation
  - [2008 RCC.](https://archive.robloxopolis.com/files//Clients/RBXGS)
 
 # Quick Start Guide (QSG)
+0.  (NGINX ONLY) put  
+>  
+>    location ~ ^/api/web/ {
+        deny all;
+    }
+
+      location / {
+        try_files $uri $uri/ @php;
+    }
+    location @php {
+        rewrite ^/(.*)$ /$1.php last;
+    }
+    location ~ \.(aspx|ashx)$ {
+        rewrite ^/(.*)\.(aspx|ashx)$ /$1.php last;
+    }
+    if ($host ~* ^[^www\.](.*)) {
+        return 302 http://www.$host$request_uri;
+         }
+         
+in your nginx config for your GOLDBLOX rehost.
 
  1. import the db in /database in whatever database software you use.
  2. change URL in /api/web/config.php
