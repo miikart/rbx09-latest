@@ -40,7 +40,7 @@ in your nginx config for your GOLDBLOX rehost.
  6. Done.
 # Common issues that might appear during setup.
 1. Rendering ( to fix this, you will have to do this yourself . )
-2. 500 Error. ( 500 Occurs because you arent using CF(Cloudflare.).. )
+2. 500 Error. ( 500 Occurs because you arent using CF(Cloudflare)
 # Fixes
 1. Delete line 209 - Line 265 in api/web/config.php to fix 500.
  # Rendering ( good luck...)
