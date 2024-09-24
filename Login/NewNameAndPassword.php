@@ -1,8 +1,6 @@
 
 
         <?php 
-     header("Location: /Membership/CreationDisabled.aspx");
-exit;
       $onlybanner = true;
           include '../api/web/header.php';
 $username = $password = $confirm_password = "";
@@ -231,7 +229,7 @@ unset($con);
                 <div></div>
                 <div></div>
               </div>
-              <div class="g-recaptcha" data-sitekey="6LfMYiQqAAAAAJV_8iDCPpfFoXJk8oXwK6p8dm-i"></div>
+              <div class="g-recaptcha" data-sitekey="6Lf7ONkpAAAAAOLEVigMncOT1N9FiN9adLko-k12"></div>
             </fieldset>
           </div>
           <div class="Confirm">
@@ -250,7 +248,7 @@ unset($con);
         <h3>Terms &amp; Conditions</h3>
         <p>Registration does not provide any guarantees of service. See our <a id="ctl00_cphGOLDBLOX_HyperLinkToS" href="/info/TermsOfService.aspx" target="_blank">Terms of Service</a> and <a id="ctl00_cphGOLDBLOX_HyperLinkEULA" href="/info/EULA.htm" target="_blank">Licensing Agreement</a> for details.</p>
         <p>GOLDBLOX will not share your email address with 3rd parties. See our <a id="ctl00_cphGOLDBLOX_HyperLinkPrivacy" href="/info/Privacy.aspx" target="_blank">Privacy Policy</a> for details.</p>
-    <a id="ctl00_cphGoldblox_hlTruste" href="http://www.truste.org/ivalidate.php?url=www.roblox.com&amp;sealid=105" style="display:inline-block;width:140px;"><img src="/images/truste_seal_kids.gif" alt="" style="border-width:0px;"></a>
+    <a id="ctl00_cphGOLDBLOX_hlTruste" href="http://www.truste.org/ivalidate.php?url=www.GOLDBLOX.com&amp;sealid=105" style="display:inline-block;width:140px;"><img src="/images/truste_seal_kids.gif" alt="" style="border-width:0px;"></a>
     
       </div>
     </div>

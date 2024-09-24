@@ -1,8 +1,6 @@
 
 
     <?php 
-header("Location: /Membership/CreationDisabled.aspx");
-exit;
 $onlybanner = true;
           include '../api/web/header.php';
 

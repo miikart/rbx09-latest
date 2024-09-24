@@ -1,6 +1,6 @@
 <?php
-$siteKey = "6LfMYiQqAAAAAJV_8iDCPpfFoXJk8oXwK6p8dm-i";
-$secret = "6LfMYiQqAAAAAE02nqdVCXBbEhfJWjyYRWtMp_tx";
+$siteKey = "aaaaaaaa";
+$secret = "aaaaaaaaaa";
 /**
  * This is a PHP library that handles calling reCAPTCHA.
  *    - Documentation and latest version
