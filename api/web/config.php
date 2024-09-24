@@ -206,7 +206,7 @@ if($_USER['filter'] == 0 && $auth == true) {
 } else { 
   $filterenabled = true;     
 }
- /* just get rid of this if you dont use cloudflare or else it would just 500 on login - mii 9/21/2024 /*
+ // just get rid of this if you dont use cloudflare or else it would just 500 on login - mii 9/21/2024 //
 if(!$local) {
     $ip = $_SERVER['HTTP_CF_CONNECTING_IP']; 
     function isVPN($ip) {

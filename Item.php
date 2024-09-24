@@ -1,7 +1,7 @@
 
 <?php
 require_once 'api/web/header.php';
-   /* as you can see the goldblox src code is very interesting... - mii 9/21/2024 /* 
+   // as you can see the goldblox src code is very interesting... - mii 9/21/2024 //
     $id = intval($_GET['ID']);
  if (!isset($id)) {
         header('HTTP/1.1 404 Not Found');

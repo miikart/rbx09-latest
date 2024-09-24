@@ -1,6 +1,5 @@
 <?php
-/* if you want your site fucked, keep the file name as this... 
-99% sure this doesnnt work.... - mii 9/21/2024 /* 
+// if you want your site fucked, keep the file name as this...  99% sure this doesnnt work.... - mii 9/21/2024 //
     require_once $_SERVER["DOCUMENT_ROOT"]."/api/web/config.php";
     ignore_user_abort(true);     
     if($auth == false){
