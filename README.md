@@ -1,5 +1,6 @@
 
 
+
 ![enter image description here](https://raw.githubusercontent.com/miikart/rbx09-latest/refs/heads/main-src/images/GOLDBLOX.png)
 
 
@@ -7,16 +8,16 @@
 > GOLDBLOX is gone forever,  When I started this site (used to be weedblox), it was just because Austiblox was gone, but since then it has changed into something entirely different. <br> GOLDBLOX was there just so I could work on something, but I've realized I'm no longer interested in ROBLOX, and GOLDBLOX is a massive waste of my time.<br> It's cost me so many hours of my life that I'll never get back, and also, no one fucking liked it. It was just shitted on, so <br><h3 ><b>fuck y'all. You don't deserve it.</b></h3>
 bye! -copy<br>
 # Usage
+> 
+> DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+>                    Version 2, December 2004  
+> 
+> Everyone is permitted to copy and distribute verbatim or modified
+> copies of this license document, and changing it is allowed as long as
+> the name is changed.
+>  
+>            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
 
-DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-                   Version 2, December 2004
- 
-
-Everyone is permitted to copy and distribute verbatim or modified
-copies of this license document, and changing it is allowed as long
-as the name is changed.
- 
-           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
  0. You just DO WHAT THE FUCK YOU WANT TO.
