@@ -32,7 +32,7 @@ bye! -copy<br>
  - [2008 RCC.](https://archive.robloxopolis.com/files//Clients/RBXGS)
 
 # Quick Start Guide (QSG)
-0.01. Note: if aapanel is Used, Place under put it under include /www/server/panel/vhost/rewrite/yourdomain.conf;
+# Note: Aapanel should place the nginx config under /www/server/panel/vhost/rewrite/ in config and not URL rewrite
 
 0.  (NGINX ONLY) put  
 >  
