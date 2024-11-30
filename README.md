@@ -32,6 +32,8 @@ bye! -copy<br>
  - [2008 RCC.](https://archive.robloxopolis.com/files//Clients/RBXGS)
 
 # Quick Start Guide (QSG)
+0.01. Note: if aapanel is Used, Place under put it under include /www/server/panel/vhost/rewrite/yourdomain.conf;
+
 0.  (NGINX ONLY) put  
 >  
 
@@ -53,7 +55,6 @@ bye! -copy<br>
     }
          
 in your nginx config for your GOLDBLOX rehost.
-Note: if aapanel is Used, Place under put it under include /www/server/panel/vhost/rewrite/yourdomain.conf;
  1. import the db in /database in whatever database software you use.
  2. change URL in /api/web/config.php
  3. change db info in /api/web/database.php and dbpdo.php.
