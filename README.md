@@ -53,7 +53,7 @@ bye! -copy<br>
     }
          
 in your nginx config for your GOLDBLOX rehost.
-
+Note: if aapanel is Used, Place under put it under include /www/server/panel/vhost/rewrite/yourdomain.conf;
  1. import the db in /database in whatever database software you use.
  2. change URL in /api/web/config.php
  3. change db info in /api/web/database.php and dbpdo.php.
