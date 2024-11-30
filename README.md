@@ -1,6 +1,7 @@
 
 
 
+
 ![enter image description here](https://raw.githubusercontent.com/miikart/rbx09-latest/refs/heads/main-src/images/GOLDBLOX.png)
 
 
@@ -32,9 +33,10 @@ bye! -copy<br>
  - [2008 RCC.](https://archive.robloxopolis.com/files//Clients/RBXGS)
 
 # Quick Start Guide (QSG)
-# Note: Aapanel should place the nginx config under /www/server/panel/vhost/rewrite/ in config and not URL rewrite
 
-0.  (NGINX ONLY) put  
+
+
+0.  (NGINX ONLY) the below should be in your config.
 >  
 
       location / {
@@ -54,7 +56,9 @@ bye! -copy<br>
         deny all;
     }
          
-in your nginx config for your GOLDBLOX rehost.
+
+**IF AAPANEL IS USED: place in /www/server/panel/vhost/rewrite/ in CONFIG Not URL rewrite.**
+
  1. import the db in /database in whatever database software you use.
  2. change URL in /api/web/config.php
  3. change db info in /api/web/database.php and dbpdo.php.
